@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<title>9cn-首页</title>
+	<link rel="stylesheet" type="text/css" href="css/reseting.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/layout.css" />
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			// n-banner轮播
+			var k=0, autoSlide = null;
+			$(".n-banner p").hide().eq(0).show();
+			$(".n-banner p").removeClass("active").eq(0).addClass("active");
+			$(".n-dot span").removeClass("active").eq(0).addClass("active")
+			$(".n-dot span").click(function(){
+				k=$(this).index()
+				$(".n-banner p").fadeOut().eq(k).show();
+				$(".n-banner p").removeClass("active").eq(k).addClass("active");
+				$(".n-dot span").removeClass("active").eq(k).addClass("active")
+			})
+			autoSlide=setInterval(function(){
+				swipper();
+			},5000)
+
+			$(".n-banner").mouseenter(function(){
+				clearInterval(autoSlide)
+			})
+			$(".n-banner").mouseleave(function(){
+				autoSlide=setInterval(function(){
+					swipper();
+				},5000)
+			})
+
+			function swipper(){
+				k++;
+				if(k>$(".n-banner p").length-1){
+					k=0;
+				}
+				$(".n-banner p").fadeOut().eq(k).show();
+				$(".n-banner p").removeClass("active").eq(k).addClass("active");
+				$(".n-dot span").removeClass("active").eq(k).addClass("active")
+			}
+		})
+	</script>
+</head>
+<body>
+	<div class="nav-wrapper">
+		<div class="containers nav-content">
+			<a href="/" class="logo fl"><img src="images/logo-9cn.png" alt="小程序商店" title="小程序商店"></a>
+			<div class="nav-menu fr">
+				<div class="nav-item active">
+					<a href="/">
+						<div class="pos">
+							<span>首页</span>
+							<span class="color">首页</span>
+						</div>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="company.html">
+						<div class="pos">
+							<span>公司</span>
+							<span class="color">公司</span>
+						</div>
+					</a>
+				</div>
+				<!-- <div class="nav-item">
+					<a href="">
+						<div class="pos">
+							<span>合作</span>
+							<span class="color">合作</span>
+						</div>
+					</a>
+				</div> -->
+				<div class="nav-item">
+					<a href="information.html">
+						<div class="pos">
+							<span>资讯</span>
+							<span class="color">资讯</span>
+						</div>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="join.html">
+						<div class="pos">
+							<span>加入</span>
+							<span class="color">加入</span>
+						</div>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="javascript:;">
+						<div class="pos">
+							<span>下载</span>
+							<span class="color">下载</span>
+						</div>
+					</a>
+					<div class="nav-child">
+						<a href="http://9.cn/download" class="active">第九程序</a>
+						<a href="http://9.cn/download/yiding">一订</a>
+						<a href="http://9.cn/download/qingdian">轻点</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="links-wrapper main-wrapper" style="margin-top: 96px;">
+		<div class="containers">
+			<h2>友情链接</h2>
+			<div class="links">
+				<a href="javascript:;">友情链接</a>
+				<a href="javascript:;">设计长沙</a>
+				<a href="javascript:;">中国包装设计网</a>
+				<a href="javascript:;">BranD</a>
+				<a href="javascript:;">当代艺术网</a>
+				<a href="javascript:;">中国艺术设计联盟</a>
+				<a href="javascript:;">翼码旺财</a>
+				<a href="javascript:;">视觉中国</a>
+				<a href="javascript:;">T恤设计</a>
+				<a href="javascript:;">ad110.com</a>
+				<a href="javascript:;">友情链接</a>
+				<a href="javascript:;">设计长沙</a>
+				<a href="javascript:;">中国包装设计网</a>
+				<a href="javascript:;">BranD</a>
+				<a href="javascript:;">当代艺术网</a>
+				<a href="javascript:;">中国艺术设计联盟</a>
+				<a href="javascript:;">翼码旺财</a>
+				<a href="javascript:;">视觉中国</a>
+				<a href="javascript:;">T恤设计</a>
+				<a href="javascript:;">ad110.com</a>
+				<a href="javascript:;">友情链接</a>
+				<a href="javascript:;">设计长沙</a>
+				<a href="javascript:;">中国包装设计网</a>
+				<a href="javascript:;">BranD</a>
+				<a href="javascript:;">当代艺术网</a>
+				<a href="javascript:;">中国艺术设计联盟</a>
+				<a href="javascript:;">翼码旺财</a>
+				<a href="javascript:;">设计长沙</a>
+				<a href="javascript:;">中国包装设计网</a>
+				<a href="javascript:;">BranD</a>
+				<a href="javascript:;">当代艺术网</a>
+				<a href="javascript:;">中国艺术设计联盟</a>
+				<a href="javascript:;">视觉中国</a>
+				<a href="javascript:;">T恤设计</a>
+				<a href="javascript:;">ad110.com</a>
+				<a href="javascript:;">中国包装设计网</a>
+				<a href="javascript:;">BranD</a>
+				<a href="javascript:;">当代艺术网</a>
+				<a href="javascript:;">中国艺术设计联盟</a>
+				<a href="javascript:;">翼码旺财</a>
+				<a href="javascript:;">视觉中国</a>
+				<a href="javascript:;">T恤设计</a>
+				<a href="javascript:;">ad110.com</a>
+				<a href="javascript:;">友情链接</a>
+				<a href="javascript:;">设计长沙</a>
+				<a href="javascript:;">中国包装设计网</a>
+				<a href="javascript:;">BranD</a>
+				<a href="javascript:;">当代艺术网</a>
+				<a href="javascript:;">中国艺术设计联盟</a>
+				<a href="javascript:;">翼码旺财</a>
+				<a href="javascript:;">视觉中国</a>
+				<a href="javascript:;">T恤设计</a>
+				<a href="javascript:;">ad110.com</a>
+				<a href="javascript:;">T恤设计</a>
+				<a href="javascript:;">ad110.com</a>
+				<a href="javascript:;">友情链接</a>
+				<a href="javascript:;">设计长沙</a>
+				<a href="javascript:;">中国包装设计网</a>
+				<a href="javascript:;">BranD</a>
+				<a href="javascript:;">当代艺术网</a>
+				<a href="javascript:;">中国艺术设计联盟</a>
+				<a href="javascript:;">翼码旺财</a>
+				<a href="javascript:;">设计长沙</a>
+				<a href="javascript:;">中国包装设计网</a>
+				<a href="javascript:;">BranD</a>
+				<a href="javascript:;">当代艺术网</a>
+				<a href="javascript:;">中国艺术设计联盟</a>
+				<a href="javascript:;">视觉中国</a>
+				<a href="javascript:;">T恤设计</a>
+				<a href="javascript:;">ad110.com</a>
+				<a href="javascript:;">中国包装设计网</a>
+				<a href="javascript:;">BranD</a>
+				<a href="javascript:;">当代艺术网</a>
+				<a href="javascript:;">中国艺术设计联盟</a>
+				<a href="javascript:;">翼码旺财</a>
+				<a href="javascript:;">视觉中国</a>
+				<a href="javascript:;">T恤设计</a>
+				<a href="javascript:;">ad110.com</a>
+				<a href="javascript:;">友情链接</a>
+				<a href="javascript:;">设计长沙</a>
+				<a href="javascript:;">中国包装设计网</a>
+				<a href="javascript:;">BranD</a>
+				<a href="javascript:;">当代艺术网</a>
+				<a href="javascript:;">中国艺术设计联盟</a>
+				<a href="javascript:;">翼码旺财</a>
+				<a href="javascript:;">视觉中国</a>
+				<a href="javascript:;">T恤设计</a>
+				<a href="javascript:;">ad110.com</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="foot-wrapper">
+		<div class="containers foot clear">
+			<div class="foot-left fl">
+				<dl>
+					<dt><img src="images/foot-logo-9cn.png" alt=""></dt>
+					<dd class="clear">
+						<a href="" class="f-logo"><img src="images/foot-logo-xcx.png" alt=""></a>
+						<a href="" class="f-logo"><img src="images/foot-logo-yd.png" alt=""></a>
+						<a href="" class="f-logo"><img src="images/foot-logo-qd.png" alt=""></a>
+						<a href="" class="f-logo"><img src="images/foot-logo-zbpt.png" alt=""></a>
+						<a href="" class="f-logo"><img src="images/foot-logo-kfz.png" alt=""></a>
+					</dd>
+					<dd class="text">
+						<a href="javascript:;" class="text">公司简介</a>
+						<a href="javascript:;" class="text">媒体报道</a>
+						<a href="javascript:;" class="qq">3554537959</a>
+						<a href="javascript:;" class="wb">关注微博</a>
+						<a href="javascript:;" class="tel">商务热线：0592-6776776</a>
+					</dd>
+					<div class="links">
+						<span>友情链接：</span>
+						<a href="javascript:;">设计青年</a>
+						<a href="javascript:;">AD518最设计</a>
+						<a href="javascript:;">站酷网</a>
+						<a href="javascript:;">创意发声</a>
+						<a href="javascript:;">正合奇胜</a>
+						<a href="javascript:;">设计青年</a>
+						<a href="javascript:;">AD518最设计</a>
+						<a href="javascript:;">站酷网</a>
+						<a href="javascript:;">创意发声</a>
+						<a href="javascript:;">正合奇胜</a>
+						<a href="javascript:;">查看更多>></a>
+					</div>
+				</dl>
+			</div>
+			<div class="foot-right fr">
+				<div class="ewms-wrapper">
+					<div class="item">
+						<span class="pic"><img src="images/code-tel.png" alt="..."></span>
+						<p>手机访问</p>
+					</div>
+					<div class="item">
+						<span class="pic"><img src="images/code-weixin.png" alt="..."></span>
+						<p>扫一扫关注我们</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">Copyright © 2017 9.cn&nbsp;&nbsp;&nbsp;闽ICP备13017663号-12&nbsp;&nbsp;&nbsp;厦门云游数码科技有限公司&nbsp;&nbsp;&nbsp;版权所有</div>
+	</div>
+	<script type="text/javascript">
+		$(function() {
+			$(".show-content").on('mouseenter', '.list .app-try', function() {
+				$(this).parents(".list").find(".qrcode").stop().fadeIn();
+			});
+			$(".show-content").on('mouseleave', '.list .app-try', function() {
+				$(this).parents(".list").find(".qrcode").hide();
+			});
+		});
+		//处理图片的宽高
+		function setImgWH(obj) {
+			if(obj.width > obj.height) {
+				$(obj).css('height', '100%');
+			} else {
+				$(obj).css('width', '100%');
+			}
+		}
+	</script>
+</body>
+</html>

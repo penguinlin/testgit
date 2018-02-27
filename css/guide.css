@@ -1,0 +1,33 @@
+
+/* guide start */
+html, body { background: #f9f9f9; }
+.container { width: 1080px; margin: 0 auto; }
+
+.nav-wrapper { border-top: none; }
+.nav-wrapper .header { height: 66px; }
+.head-holder { height: 66px; }
+.nav-wrapper .header .logo { width: 170px; height: 40px; margin-top: 14px; background: url('../images/logo-header-dev.png'); }
+.nav-wrapper .nav {}
+.nav-wrapper .nav a { height: 66px; line-height: 70px; font-size: 16px; color: #808080; display: inline-block; margin-right: 12px; margin-left: 30px; }
+.nav-wrapper .nav a.active, .nav-wrapper .nav a:hover { color: #0065a8; }
+
+
+.title_common{ padding: 18px 0; font-size: 14px; color: #808080; }
+.title_common a { color: #303030; display: inline-block; font-size: 14px; }
+.title_common label { display: inline-block; width: 6px; height: 12px; background: url('../images/page-history.png') no-repeat right center; vertical-align: middle; margin: -2px 8px 0 8px; }
+.title_common a:last-of-type { cursor: default; color: #909090; }
+
+.nav-title{ height: 52px; line-height: 52px; border-bottom: 1px solid #F4F4F4; padding: 0 16px; }
+.nav-title h2 { font-size: 18px; color: #909090; display: inline-block; }
+.nav-title h2 img { width: 25px; height: 25px; display: inline-block; margin-right: 10px; }
+.navigate{ border: 1px solid #F4F4F4; margin-bottom: 30px; background: #FFFFFF; }
+
+.nav-content { padding: 15px 8px; -moz-box-sizing: border-box; box-sizing: border-box; }
+.nav-content h3 { font-size: 16px; color: #0db252; }
+.nav-icon{ width: 25px; height: 25px; vertical-align: middle; margin: -7px 4px 0 0; }
+.nav-content a{ float: left; width: 20%; height: 90px; background: #FFFFFF; padding: 20px 16px; -moz-box-sizing: border-box; box-sizing: border-box; }
+.nav-content a:hover h3,
+.nav-content a:hover p{ color: #0065a9; }
+.nav-content a:hover { background: #f8f8f8; }
+.nav-content a p{ font-size: 12px; color: #999999; display: -webkit-box; display: -moz-box; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; word-break: break-all; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 17px; height: 34px; margin-top: 8px; }
+/* guide end */
